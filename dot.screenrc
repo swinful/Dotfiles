@@ -1,0 +1,23 @@
+# Author: Samuel A. Winful <samuel@winful.com>
+# Filename: .screenrc
+#
+
+attrcolor b ".I"
+defbce "on"
+defscrollback 9000 # I like to scroll back:)
+defutf8 on # For UTF-8
+hardcopy_append on
+hardcopydir ScreenHardCopy
+hardstatus alwayslastline
+hardstatus string '%{gk}[%{G}%H%{g}] [%=%{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+
+logtstamp on # Logging -- Not the same as hardcopy
+maptimeout 5
+multiuser off
+shell -${SHELL}
+shelltitle '$ | edit' # For zsh
+startup_message off # Disable the splash screen
+term vt100
+termcapinfo xterm* ti@:te@
+defnonblock 5
+
