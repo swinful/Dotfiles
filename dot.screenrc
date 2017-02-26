@@ -6,20 +6,18 @@ attrcolor b ".I"
 caption always "%?%{ Wk}%-Lw%?%{Rk}%n*%f %t%?(%u)%?%?%{Wk}%+Lw%? %{Rk}%=%c %{rk}%d/%M/%Y"
 defbce "on"
 defnonblock 5
-defscrollback 9000 # I like to scroll back:)
-defutf8 on # For UTF-8
+defscrollback 4000
+# Enable UTF8
+defutf8 on
 hardcopy_append on
-hardcopydir ScreenHardCopy
 hardcopydir ~/ScreenHardCopy
-hardstatus alwayslastline
-hardstatus string "%{+b Rk}(%{-b g}$LOGNAME@%H%{+b R}) (%{-b g}%C %a%{+b R}) %{-b g} %n %t %h"
 hardstatus string '%{gk}[%{G}%H%{g}] [%=%{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
-logtstamp on # Logging -- Not the same as hardcopy
+# For logging. Not the same as hardcopy
+logtstamp on 
 maptimeout 5
 multiuser off
 shell -${SHELL}
 shelltitle '$ | edit' # For zsh
 startup_message off # Disable the splash screen
-term vt100
+term xterm-color
 termcapinfo xterm* ti@:te@
-
