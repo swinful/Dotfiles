@@ -190,7 +190,7 @@ alias xterm='xterm -font 10x20'
 #
 case $OS_TYPE in
   CYGWIN*)
-    JAVAHOME=/cygdrive/c/MyFolder/devtools/java/jdk1.7.0_51
+    JAVAHOME=/cygdrive/c/MyFolder/java/jre1.8.0_111
     PATH=$JAVAHOME/bin:$PATH
     ;;
 
@@ -431,9 +431,3 @@ if [ -d $HEROKU_PATH ]; then
   export PATH=$HEROKU_PATH/bin:$PATH
 fi
 
-# IRC INFO
-# setenv IRCNICK icon
-# setenv IRCUSER icon
-# setenv IRC_HOST irc.synsmash.net
-# setenv IRCNAME icon
-# setenv IRCFINGER BooO!
